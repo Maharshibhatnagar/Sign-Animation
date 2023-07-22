@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharshi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .svg-container {
+            text-align: center; /* Center the container */
+        }
+
+        svg {
+            width: 500px;
+            font-weight: bold; /* Make the SVG bolder */
+        }
+
+        path {
+            stroke-dasharray: 3200.319091796875;
+            stroke-dashoffset: 3200.319091796875;
+            animation: LineAnimation 5s ease forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes LineAnimation {
+            to {
+                stroke-dashoffset: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="svg-container">
+        <svg width="1120" height="467" viewBox="0 0 1120 467" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 466L60.5 409.5L103.5 318L146.5 1V237.5L168 318L203 334.5L254 256.5L289 108.5V41.5L254 108.5V175.5L275.5 334.5C275.5 360.1 304.167 309.167 318.5 280.5L361.5 318L412.5 280.5L461 299.5L523 280.5H590H633L695 299.5L762 256.5H880.5L966.5 194.5L926 108.5L896.5 216V377.5V447.5L845.5 466V426L1106 361L1119.5 237.5" stroke="black"/>
+        </svg>
+    </div>
+</body>
+</html>
